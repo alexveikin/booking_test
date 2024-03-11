@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.statistics-items {
+    @apply mx-auto p-3 md:p-6 grid lg:grid-cols-3 grid-cols-1 gap-6;
+}
+
+.statistics-item {
+    @apply border border-slate-700 p-2 rounded-lg;
+}
+
+.statistics-item-title {
+    @apply text-xl text-gray-700 text-center;
+}
+
+.statistics-item-body {
+    @apply mt-4 text-gray-600 text-sm leading-relaxed;
+}
+
+.statistics-item-body table {
+    @apply border-collapse border border-slate-700 w-full;
+}
+
+.statistics-item-body th,
+.statistics-item-body td {
+    @apply border border-slate-700;
+}
+
+.statistics-item-body tbody td {
+    @apply text-center px-2 py-0.5;
+}
